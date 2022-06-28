@@ -1,0 +1,30 @@
+.texto{
+  /* border: solid; */
+  background-color: rgba(255, 255, 255, 0.694);
+}
+body{
+    background-image: url('imgs/fondo.jpg');
+    background-position: center center;
+}
+
+nav,footer{
+    background-color: rgba(128, 128, 128, 0.619);
+}
+
+nav{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.cajaA{
+background-color: #615192cb;
+color:white;
+}
+.cajaB{
+background-color: #261758c9;
+color: white;
+}
+.cajaC{
+background-color: #13073ad2;
+color: white;
+}
