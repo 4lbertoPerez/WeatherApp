@@ -7,23 +7,14 @@ body{
 
 }
 
-nav,footer{
-    background-color:rgba(255, 255, 255, 0.455);
-}
-
-nav{
-    font-size: x-large;
-    font-weight: bolder;
-}
-
 .par{
     text-align: center;
     margin-top: 5%;
     background: rgba(255, 255, 255, 0.17);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.3px);
--webkit-backdrop-filter: blur(7.3px);
-padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    padding: 10px;
 
 }
 
@@ -33,29 +24,35 @@ padding: 10px;
     
 }
 
-#caja1,#caja2,#caja3{
+#caja1,#caja3{
     height: 180px;
     padding-top: 25px;
-background: rgba(255, 255, 255, 0.17);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.3px);
--webkit-backdrop-filter: blur(7.3px);
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
 
 }
 
 .third{
     text-align: center;
     background: rgba(255, 255, 255, 0.17);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.3px);
--webkit-backdrop-filter: blur(7.3px);
-margin-top: 9%;
-padding: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    margin-top: 9%;
+    padding: 3px;
+    font-size: xx-large;
 }
 
 img{
     transform: scale(3.5)!important;
-    margin-top: 35px;
+    margin-top: 55px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 
