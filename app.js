@@ -16,10 +16,10 @@ window.addEventListener("load", () => {
       lon = posicion.coords.longitude;
 
       //ubicacion actual
-      //const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=3152b6ba37672decf7a09709e96e29c2`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=3152b6ba37672decf7a09709e96e29c2`;
 
       //ubicacion por ciudad
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=3152b6ba37672decf7a09709e96e29c2`;
+      //const url = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=3152b6ba37672decf7a09709e96e29c2`;
       //   console.log(url);
 
       fetch(url)
@@ -27,9 +27,9 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then((data) => {
-          // console.log(data);
-          //console.log(data.weather[0].main);
-          // console.log(data.name);
+          console.log(data);
+          console.log(data.weather[0].main);
+          console.log(data.name);
 
           temperatura = Math.round(data.main.temp);
           valorTemp.textContent = `${temperatura} ºC`;
@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
           let ubi = data.name;
           ubicacion.textContent = `You are at ${ubi}`;
           let valorViento = data.wind.speed;
-          velocViento.textContent = `${valorViento} Kms/h`;
+          velocViento.textContent = `${valorViento} Km/h`;
           // let iconName = data.weather[0].icon;
           // const url = `imgs/amcharts_weather_icons_1.0.0/animated/${iconName}`;
 
