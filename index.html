@@ -22,39 +22,37 @@
   </head>
 
   <body>
-    <nav class="pb-3 pt-3 text-center text-white">
-      <div class="navbar-text">WeatherApp</div>
-    </nav>
     <div class="container">
-      <div class="row mt-5">
-        <div id="caja1" class="col-4 bg-info shadow-lg">
-          <h1 id="valorTemp"></h1>
-          <h1 id="descTemp"></h1>
+      <div class="row par">
+        <div class="col-12">
+          <h1>This app use OpenweatherApi</h1>
         </div>
-        <div id="caja2" class="col-4 bg-light shadow-lg">
-          <h2 id="ubicacion"></h2>
+      </div>
+      <div class="row info">
+        <div id="caja1" class="col-4 shadow-lg rounded-start">
+          <h3 id="descTemp"></h3>
+          <br />
+          <h1 id="valorTemp"></h1>
+        </div>
+        <div id="caja2" class="col-4 shadow-lg">
           <img
             src="imgs/amcharts_weather_icons_1.0.0/animated/day.svg"
             alt="no_photo"
             id="animado"
           />
         </div>
-        <div id="caja3" class="col-4 bg-info shadow-lg">
-          <h3></h3>
+        <div id="caja3" class="col-4 shadow-lg rounded-end">
+          <h3>WIND</h3>
+          <br />
           <h1 id="velocViento"></h1>
         </div>
       </div>
-    </div>
 
-    <footer class="text-center text-lg-start fixed-bottom">
-      <!-- Copyright -->
-      <div class="text-center p-3 text-white">
-        © 2022 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/"
-          >Alberto Pérez Pérez</a
-        >
+      <div class="row third">
+        <div class="col-12">
+          <h3 id="ubicacion"></h3>
+        </div>
       </div>
-      <!-- Copyright -->
-    </footer>
+    </div>
   </body>
 </html>

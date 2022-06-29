@@ -1,7 +1,10 @@
 
 body{
-    background-image: url('imgs/fondo.jpg');
-    background-position: center center;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 nav,footer{
@@ -11,6 +14,48 @@ nav,footer{
 nav{
     font-size: x-large;
     font-weight: bolder;
+}
+
+.par{
+    text-align: center;
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.17);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+padding: 10px;
+
+}
+
+.info{
+    margin-top: 9%;
+    text-align: center;
+    
+}
+
+#caja1,#caja2,#caja3{
+    height: 180px;
+    padding-top: 25px;
+background: rgba(255, 255, 255, 0.17);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+
+}
+
+.third{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.17);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+margin-top: 9%;
+padding: 3px;
+}
+
+img{
+    transform: scale(3.5)!important;
+    margin-top: 35px;
 }
 
 

@@ -32,10 +32,13 @@ window.addEventListener("load", () => {
           // console.log(data.name);
 
           temperatura = Math.round(data.main.temp);
-          valorTemp.textContent = temperatura;
-          descTemp.textContent = data.weather[0].description;
-          ubicacion.textContent = data.name;
-          velocViento.textContent = data.wind.speed;
+          valorTemp.textContent = `${temperatura} ºC`;
+          let contTiempo = data.weather[0].description;
+          descTemp.textContent = contTiempo.toUpperCase();
+          let ubi = data.name;
+          ubicacion.textContent = `You are at ${ubi}`;
+          let valorViento = data.wind.speed;
+          velocViento.textContent = `${valorViento} Kms/h`;
           // let iconName = data.weather[0].icon;
           // const url = `imgs/amcharts_weather_icons_1.0.0/animated/${iconName}`;
 
